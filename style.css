@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Graphik-medium';
+    src: url(assets/graphik/Graphik-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Graphik-Regular';
+    src: url(assets/graphik/Graphik-Regular.ttf);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.nav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    overflow-y: hidden;
+    z-index: 2;
+}
+
+.nav-logo{
+    background-image: url(assets/logo-nubank.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 44px;
+    height: 64px;
+    margin-left: 50px;
+}
+
+.nav-options-menu {
+    font-family: 'Graphik-medium';
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-options-menu a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.753);
+    margin-right: 25px;
+    cursor: default;
+}
+
+.nav-options-menu > a#home:hover, .nav-options-menu > a#questions:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.nav-login {
+    font-family: 'Graphik-medium';
+    color: #820ad1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 0;
+}
+
+.nav-login > .material-icons {
+    margin: 0 35px 0 5px;
+}
+
+main {
+    width: 100vw;
+    height: 110vh;
+}
+
+main .img-info-principal {
+    background-image: url(assets/casal-cafeteria-main.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.words-title {
+    margin-left: 75px;
+    width: 35%;
+    font-family: 'Graphik-regular';
+    color: white;
+    font-weight: 300;
+    line-height: 1.3;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.705);
+}
+
+.words-title h2 {
+    font-size: 2.8rem;
+}
+
+.words-title p {
+    font-size: 1.5rem;
+}
+
+.create-acc {
+    background-color: rgb(255, 255, 255);
+    margin-right: 75px;
+    padding: 25px;
+    width: 340px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.title-creat-acc {
+    height: 90px;
+    font-family: 'Graphik-regular';
+    font-size: 1.45rem;
+    line-height: 1.4;
+}
+
+input.pass {
+    text-decoration: none;
+    padding-bottom: 15px;
+    border-style: none;
+    outline: 0;
+    background-color: transparent;
+    border-bottom: 1px solid lightgray;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Graphik-regular';
+}
+
+
+a.create {
+    text-decoration: none;
+    font-family: 'Graphik-regular';
+    color: rgb(187, 187, 187);
+    padding: 10px;
+    background-color: rgba(219, 219, 219, 0.733);
+    border-radius: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.for-you {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 55px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    font-family: 'Graphik-regular';
+    display: none;
+}
+
+.nubank, .ultravioleta, .seguros, .outros {
+    padding: 25px 25px 25px 50px;
+}
+
+.nubank {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.nubank a {
+    font-family: 'Graphik-medium';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.nubank a:hover {
+    color: #820ad1;
+}
+
+.ultravioleta {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.ultravioleta a {
+    font-family: 'Graphik-medium';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.ultravioleta a:hover {
+    color: #820ad1;
+}
+
+.seguros {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.seguros a {
+    font-family: 'Graphik-medium';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.seguros a:hover {
+    color: #820ad1;
+}
+
+.outros {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.outros a {
+    font-family: 'Graphik-medium';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.outros a:hover {
+    color: #820ad1;
+}
+
+.business {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 55px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    font-family: 'Graphik-regular';
+    display: none;
+}
+
+.pj, .payments {
+    padding: 25px 25px 25px 50px;
+}
+
+.pj {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    width: 50%;
+}
+
+.pj a {
+    font-family: 'Graphik-medium';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.pj a:hover {
+    color: #820ad1;
+}
+
+.payments {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.payments a {
+    font-family: 'Graphik-medium';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.payments a:hover {
+    color: #820ad1;
+}
+
+.the-nu {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 55px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    font-family: 'Graphik-regular';
+    display: none;
+}
+
+.about, .other-channel, .in-the-world {
+    padding: 25px 25px 25px 50px;
+    width: 30%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.about a {
+    font-family: 'Graphik-medium';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.about a:hover {
+    color: #820ad1;
+}
+
+.other-channel {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.other-channel a {
+    font-family: 'Graphik-medium';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.other-channel a:hover {
+    color: #820ad1;
+}
+
+.in-the-world {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.in-the-world a {
+    font-family: 'Graphik-medium';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.in-the-world a:hover {
+    color: #820ad1;
+}
